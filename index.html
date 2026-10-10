@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>GoldBricks 呷奔啊~~</title>
+  <meta http-equiv="refresh" content="0; url=./user.html"/>
+  <style>
+    :root{
+      --bg:#f5f4fb; --card:#fff; --text:#0f172a; --muted:#64748b;
+      --primary:#fb7185; --primary2:#ff9a9e; --border:rgba(15,23,42,.10);
+      --shadow:0 10px 30px rgba(15,23,42,.10); --radius:18px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0; font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Arial;
+      background: radial-gradient(1200px 500px at 20% -10%, rgba(251,113,133,.22), transparent 60%),
+                  radial-gradient(900px 500px at 100% 0%, rgba(255,154,158,.14), transparent 55%),
+                  var(--bg);
+      color:var(--text); min-height:100vh; display:flex; align-items:center; justify-content:center;
+      padding:16px;
+    }
+    .card{
+      width:min(520px, 100%);
+      background: rgba(255,255,255,.78);
+      border:1px solid var(--border); border-radius: var(--radius);
+      box-shadow: var(--shadow); backdrop-filter: blur(10px);
+      padding:16px;
+      text-align:center;
+    }
+    h1{margin:0; font-size:18px}
+    .muted{color:var(--muted); font-size:12.5px; line-height:1.6; margin-top:6px}
+    a{color:inherit; text-decoration:none; font-weight:600}
+  </style>
+</head>
+
+<body>
+  <div class="card">
+    <h1>正在前往點餐頁...</h1>
+    <div class="muted">若未自動跳轉，請點 <a href="./user.html">這裡進入</a>。</div>
+  </div>
+
+  <script>
+    window.location.replace("./user.html");
+  </script>
+</body>
+</html>
